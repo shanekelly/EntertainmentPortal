@@ -1,0 +1,82 @@
+/* All of my theme colours are from
+ https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #212121;
+    color: white;
+}
+
+mat-toolbar {
+    background-color: #424242;
+}
+
+mat-sidenav-container {
+    height: 100vh;
+}
+
+mat-sidenav {
+    width: 250px;
+    background-color: #424242;
+}
+
+mat-nav-list {
+    padding-top: 15px;
+}
+
+.movie-section {
+    padding: 15px;
+}
+
+.movie-section h2 {
+    margin-bottom: 10px;
+}
+
+.movie-section p {
+    background-color: #424242;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.movie-card {
+    max-width: 400px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 428px) { /* iPhone 14 Pro Max and smaller devices */
+    .poster-container {
+        flex-direction: column;
+    }
+
+    .movie-card {
+        flex: 1 0 100%;
+    }
+}
+
+@media screen and (min-width: 429px) and (max-width: 900px) {
+    .poster-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .movie-card {
+        flex: 1 0 45%;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .poster-container {
+        flex-direction: row;
+    }
+
+    .movie-card {
+        flex: 1 0 30%;
+    }
+}
